@@ -3,33 +3,40 @@ let num = prompt("Select a number!");
 let new_num = Number(num);  // use num as an error instead of new_num
 if (new_num % 2 == 0){ //put the equal sign outside the if statemnet 
     console.log("The number is even!");
-    document.write("The numer is even");
+    //document.write("The numer is even");
+    alert("The number is even!");
 }
     else{
         console.log("The number is probably odd!");
-        document.write("The number is probably odd!");
+        //document.write("The number is probably odd!");
+        alert("The number is probably odd!");
     }
 //Age verifcation! 
 let age = prompt("How old are you??");
 let verified_age = Number(age);
 if (verified_age >= 18){
     console.log("You're eligible to vote!");
-    document.write("You're eligible to vote!");
+    //document.write("You're eligible to vote!");
+    alert("You're eligible to vote!");
 }
     else{
         console.log("You're not eligible to vote...");
+        alert("You're not eligible to vote...");
     }
 //Check if a number is pos, neg or zero
 let value = Number(prompt("pick an number!"));
 if (value > 0){
     console.log("This is a posititve number!");
+    alert("This is a posititve number!");
 }
     else if (value < 0 && value !=0 ){
         console.log("This is a negative number!");
+        alert("This is a negative number!");
 
     }
     else{
         console.log("This number is zero!");
+        alert("This number is zero!");
     }
 ////////////////////////////////////////////////////////////
 //Challenge 2:
@@ -52,24 +59,28 @@ while (int != 1){
     ///Put console.log here an error occured! + CORRECT WAY
 }
  console.log(factorial);
+ alert("The factorial num is" + factorial);
  ////////////////////////////////////////////////////////////
  //Challenge 3:
 
  /// function that greets people
  function greets (name){
     console.log("Hello "+ name + " How are you?");
-    return ("Hello "+ name + " How are you?");
+    alert("Hello "+ name +" How are you?");
+    //return ("Hello "+ name + " How are you?");
  }
  greets(prompt("Whats your name?"));
  // Write a function that checks if num is even or odd 
  function even_odd (num){
     if (num % 2 == 0){ 
     console.log("The number is even!");
-    document.write("The numer is even");
+    //document.write("The numer is even");
+    alert("The number is even!");
     }
     else{
         console.log("The number is probably odd!");
-        document.write("The number is probably odd!");
+        //document.write("The number is probably odd!");
+        alert("The number is probably odd");
     }
  }
 even_odd(prompt("Select a number!"));
@@ -86,6 +97,7 @@ function vowels (string){
          } 
     }
     console.log(counter);//error possibly to be v insteat counter + CORRECT WAY
+    alert("The number of vowels are" + counter );
 }
 vowels(prompt("Enter a word with vowels!(Lowercase ONLY!)"));//change to prompt later ONLY LOWERCASE PLEASE!
 
@@ -101,6 +113,7 @@ while(fruit < n ){
     fruit+=1;
 }
 console.log(lst_fruits);
+alert("The list of fruits are" + lst_fruits);
 //Write a program that stores students names and grade Loop or no loop?
 function student_info (name,grade){
     let my_dict = {'names': "Jessica", 'grades': "A+"};
@@ -119,6 +132,7 @@ function highest_value (value){
         }
     }
     console.log(max_val)
+    alert("The highest value is " + max_val);
 }
 highest_value([-1,-2,-3,-4]) //set to new array 
 //function highest_value (value){
